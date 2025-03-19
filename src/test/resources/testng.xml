@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<parameter name="browser" value="chrome"></parameter>
+<parameter name="url" value="https://www.automationexercise.com/"></parameter>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.runners.AddToCartTestRunner"/>
+      <class name="com.runners.AlertTestRunner"/>
+      <class name="com.runners.CheckBoxTestRunner"/>
+       <class name="com.runners.AutoSuggestTestRunner"/>
+       <class name="com.runners.CheckoutTestRunner"/>
+       <class name="com.runners.CourseFilterTestRunner"/>
+       <class name="com.runners.CourseSearchTestRunner"/>
+        <class name="com.runners.EnableDisableTestRunner"/>
+        <class name="com.runners.HideShowTestRunner"/>
+        <class name="com.runners.HomePageTestRunner"/>
+        <class name="com.runners.IFrameTestRunner"/>
+        <class name="com.runners.MouseHoverTestRunner"/>
+        <class name="com.runners.RadioButtonTestRunner"/>
+        <class name="com.runners.SelectDropdownTestRunner"/>
+        <class name="com.runners.SwitchTabTestRunner"/>
+        <class name="com.runners.SwitchWindowTestRunner"/>
+        <class name="com.runners.UserLoginTestRunner"/>
+        <class name="com.runners.UserRegistrationTestRunner"/>
+        <class name="com.runners.WebTableTestRunner"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Course Filter Test Suite]">
+  <test thread-count="5" name="Course Filter Tests(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://www.letskodeit.com/courses"/>
+    <classes>
+      <class name="com.runners.CourseFilterTestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="tearDownClass"/>
+          <include name="runScenario" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.runners.CourseFilterTestRunner -->
+    </classes>
+  </test> <!-- Course Filter Tests(failed) -->
+</suite> <!-- Failed suite [Course Filter Test Suite] -->
