@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>19/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Mar 18 23:45:06 PDT 2025</td>
+<td>Started on:</td><td>Wed Mar 19 01:52:22 PDT 2025</td>
 </tr>
-<tr><td>Total time:</td><td>295 seconds (295672 ms)</td>
+<tr><td>Total time:</td><td>294 seconds (294319 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,6 +76,23 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='com.runners.HomePageTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.HomePageTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the title of the homepage", "Home Page Verification"</td>
+<td><div><pre>java.lang.AssertionError: Page title does not match! expected [My Courses] but found [Login]
+	at com.homepagesteps.HomePageStepDefinitions.the_title_of_the_page_should_be(HomePageStepDefinitions.java:42)
+	at ✽.The title of the page should be &quot;My Courses&quot;(file:///C:/Users/Administrator/Desktop/Capstone_24532/Projectletskodeit/src/test/resources/Features/HomePage.feature:8)
+... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1409933277", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1409933277'><pre>java.lang.AssertionError: Page title does not match! expected [My Courses] but found [Login]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at com.homepagesteps.HomePageStepDefinitions.the_title_of_the_page_should_be(HomePageStepDefinitions.java:42)
+	at ✽.The title of the page should be &quot;My Courses&quot;(file:///C:/Users/Administrator/Desktop/Capstone_24532/Projectletskodeit/src/test/resources/Features/HomePage.feature:8)
+</pre></div></td>
+<td>11</td>
+<td>com.runners.HomePageTestRunner@2d9caaeb</td></tr>
+<tr>
 <td title='com.runners.UserRegistrationTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.UserRegistrationTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Registering in letskodeit", "Registration in letskodeit"</td>
 <td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;name&apos;]&quot;}
   (Session info: chrome=134.0.6998.89)
@@ -83,9 +100,9 @@ For documentation on this error, please visit: https://www.selenium.dev/document
 Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e7d317d4fd840a86eed3e95777fdfac7, findElement {value=//input[@id=&apos;name&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58815}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58815/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e7d317d4fd840a86eed3e95777fdfac7
+Command: [d9d01e2b4b50ba312bd755d572ca16cb, findElement {value=//input[@id=&apos;name&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63025}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63025/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d9d01e2b4b50ba312bd755d572ca16cb
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -104,16 +121,16 @@ Session ID: e7d317d4fd840a86eed3e95777fdfac7
 	at com.pages.UserRegistrationPage.setFirstName(UserRegistrationPage.java:49)
 	at com.registrationsteps.UserRegistrationStepDefinitions.user_is_required_to_enter_and_and_and_and(UserRegistrationStepDefinitions.java:49)
 	at ✽.User is required to enter &quot;c&quot; and &quot;lokesh&quot; and &quot;clokesh@gmail.com&quot; and &quot;clok@123&quot; and &quot;clok@123&quot;(file:///C:/Users/Administrator/Desktop/Capstone_24532/Projectletskodeit/src/test/resources/Features/UserRegistration.feature:7)
-... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1319019311", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1319019311'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;name&apos;]&quot;}
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace614090237", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace614090237'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;name&apos;]&quot;}
   (Session info: chrome=134.0.6998.89)
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.28.1&apos;, revision: &apos;73f5ad48a2&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e7d317d4fd840a86eed3e95777fdfac7, findElement {value=//input[@id=&apos;name&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:58815}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:58815/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e7d317d4fd840a86eed3e95777fdfac7
+Command: [d9d01e2b4b50ba312bd755d572ca16cb, findElement {value=//input[@id=&apos;name&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Windows\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63025}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63025/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d9d01e2b4b50ba312bd755d572ca16cb
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
@@ -139,29 +156,12 @@ Session ID: e7d317d4fd840a86eed3e95777fdfac7
 <td>8</td>
 <td>com.runners.UserRegistrationTestRunner@1e4d3ce5</td></tr>
 <tr>
-<td title='com.runners.HomePageTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.HomePageTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the title of the homepage", "Home Page Verification"</td>
-<td><div><pre>java.lang.AssertionError: Page title does not match! expected [My Courses] but found [Login]
-	at com.homepagesteps.HomePageStepDefinitions.the_title_of_the_page_should_be(HomePageStepDefinitions.java:42)
-	at ✽.The title of the page should be &quot;My Courses&quot;(file:///C:/Users/Administrator/Desktop/Capstone_24532/Projectletskodeit/src/test/resources/Features/HomePage.feature:8)
-... Removed 5 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1590892341", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1590892341'><pre>java.lang.AssertionError: Page title does not match! expected [My Courses] but found [Login]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at com.homepagesteps.HomePageStepDefinitions.the_title_of_the_page_should_be(HomePageStepDefinitions.java:42)
-	at ✽.The title of the page should be &quot;My Courses&quot;(file:///C:/Users/Administrator/Desktop/Capstone_24532/Projectletskodeit/src/test/resources/Features/HomePage.feature:8)
-</pre></div></td>
-<td>10</td>
-<td>com.runners.HomePageTestRunner@2d9caaeb</td></tr>
-<tr>
 <td title='com.runners.UserLoginTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.UserLoginTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Logging in letskodeit", "User logs in letskodeit"</td>
 <td><div><pre>java.lang.AssertionError: expected [https://www.letskodeit.com/] but found [https://www.letskodeit.com/login]
 	at com.loginsteps.UserLoginStepDefinitions.user_is_on_homepage(UserLoginStepDefinitions.java:57)
 	at ✽.User is on homepage(file:///C:/Users/Administrator/Desktop/Capstone_24532/Projectletskodeit/src/test/resources/Features/UserLogin.feature:7)
-... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace329929969", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace329929969'><pre>java.lang.AssertionError: expected [https://www.letskodeit.com/] but found [https://www.letskodeit.com/login]
+... Removed 6 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2106922602", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2106922602'><pre>java.lang.AssertionError: expected [https://www.letskodeit.com/] but found [https://www.letskodeit.com/login]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -171,7 +171,7 @@ Session ID: e7d317d4fd840a86eed3e95777fdfac7
 	at com.loginsteps.UserLoginStepDefinitions.user_is_on_homepage(UserLoginStepDefinitions.java:57)
 	at ✽.User is on homepage(file:///C:/Users/Administrator/Desktop/Capstone_24532/Projectletskodeit/src/test/resources/Features/UserLogin.feature:7)
 </pre></div></td>
-<td>14</td>
+<td>15</td>
 <td>com.runners.UserLoginTestRunner@4b5189ac</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -183,70 +183,40 @@ Session ID: e7d317d4fd840a86eed3e95777fdfac7
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.runners.CourseSearchTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.CourseSearchTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify course search for Python", "Course Search Functionality"</td>
-<td></td>
-<td>15</td>
-<td>com.runners.CourseSearchTestRunner@52e7a6b2</td></tr>
-<tr>
-<td title='com.runners.MouseHoverTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.MouseHoverTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify clicking an option from mouse hover menu", "Mouse Hover Functionality"</td>
-<td></td>
-<td>10</td>
-<td>com.runners.MouseHoverTestRunner@44a59da3</td></tr>
-<tr>
-<td title='com.runners.AlertTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.AlertTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify alert message after entering text", "Alert Handling Functionality"</td>
-<td></td>
-<td>18</td>
-<td>com.runners.AlertTestRunner@5a37d3ed</td></tr>
-<tr>
-<td title='com.runners.IFrameTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.IFrameTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify switching to and from an iFrame with moveToElement", "iFrame Handling with Move to Element"</td>
-<td></td>
-<td>13</td>
-<td>com.runners.IFrameTestRunner@42a15bdc</td></tr>
-<tr>
-<td title='com.runners.MouseHoverTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.MouseHoverTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify mouse hover and options visibility", "Mouse Hover Functionality"</td>
-<td></td>
-<td>10</td>
-<td>com.runners.MouseHoverTestRunner@44a59da3</td></tr>
-<tr>
-<td title='com.runners.SwitchTabTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.SwitchTabTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify switching to a new tab", "Automate functionality for switching tabs"</td>
-<td></td>
-<td>16</td>
-<td>com.runners.SwitchTabTestRunner@27508c5d</td></tr>
-<tr>
-<td title='com.runners.CourseFilterTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.CourseFilterTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify category selection", "Course Category Filtering"</td>
-<td></td>
-<td>15</td>
-<td>com.runners.CourseFilterTestRunner@f14a7d4</td></tr>
-<tr>
-<td title='com.runners.CheckBoxTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.CheckBoxTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Select Honda checkbox", "Automate functionality for checkbox selection"</td>
-<td></td>
-<td>17</td>
-<td>com.runners.CheckBoxTestRunner@26df6e3a</td></tr>
-<tr>
-<td title='com.runners.RadioButtonTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.RadioButtonTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Select BMW option", "Automate functionality for radio button"</td>
-<td></td>
-<td>15</td>
-<td>com.runners.RadioButtonTestRunner@27e47833</td></tr>
-<tr>
 <td title='com.runners.SwitchWindowTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.SwitchWindowTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify switching to a new window", "Automate functionality for switching windows"</td>
 <td></td>
 <td>12</td>
 <td>com.runners.SwitchWindowTestRunner@4f704591</td></tr>
 <tr>
-<td title='com.runners.SelectDropdownTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.SelectDropdownTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify dropdown selection", "Automate functionality for dropdown selection"</td>
-<td></td>
-<td>10</td>
-<td>com.runners.SelectDropdownTestRunner@6f6745d6</td></tr>
-<tr>
 <td title='com.runners.HideShowTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.HideShowTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the hide and show functionality with text input", "Hide and Show Element Functionality"</td>
 <td></td>
-<td>15</td>
+<td>16</td>
 <td>com.runners.HideShowTestRunner@79c97cb</td></tr>
 <tr>
 <td title='com.runners.CheckoutTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.CheckoutTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User completes checkout and sees Thank You message", "Checkout Cart process"</td>
 <td></td>
-<td>13</td>
+<td>12</td>
 <td>com.runners.CheckoutTestRunner@6b58b9e9</td></tr>
+<tr>
+<td title='com.runners.MouseHoverTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.MouseHoverTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify clicking an option from mouse hover menu", "Mouse Hover Functionality"</td>
+<td></td>
+<td>11</td>
+<td>com.runners.MouseHoverTestRunner@44a59da3</td></tr>
+<tr>
+<td title='com.runners.CourseFilterTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.CourseFilterTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify category selection", "Course Category Filtering"</td>
+<td></td>
+<td>14</td>
+<td>com.runners.CourseFilterTestRunner@f14a7d4</td></tr>
+<tr>
+<td title='com.runners.IFrameTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.IFrameTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify switching to and from an iFrame with moveToElement", "iFrame Handling with Move to Element"</td>
+<td></td>
+<td>15</td>
+<td>com.runners.IFrameTestRunner@42a15bdc</td></tr>
+<tr>
+<td title='com.runners.AlertTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.AlertTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify alert message after entering text", "Alert Handling Functionality"</td>
+<td></td>
+<td>18</td>
+<td>com.runners.AlertTestRunner@5a37d3ed</td></tr>
 <tr>
 <td title='com.runners.HomePageTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.HomePageTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify all homepage sections are displayed", "Home Page Verification"</td>
 <td></td>
@@ -255,28 +225,58 @@ Session ID: e7d317d4fd840a86eed3e95777fdfac7
 <tr>
 <td title='com.runners.AddToCartTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.AddToCartTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User adds product to the shopping bag", "Add product to the shopping bag"</td>
 <td></td>
-<td>16</td>
+<td>13</td>
 <td>com.runners.AddToCartTestRunner@1863d2fe</td></tr>
+<tr>
+<td title='com.runners.CheckBoxTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.CheckBoxTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Select Honda checkbox", "Automate functionality for checkbox selection"</td>
+<td></td>
+<td>16</td>
+<td>com.runners.CheckBoxTestRunner@26df6e3a</td></tr>
 <tr>
 <td title='com.runners.EnableDisableTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.EnableDisableTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify disabling the field", "Automate functionality for enabling and disabling fields"</td>
 <td></td>
 <td>10</td>
 <td>com.runners.EnableDisableTestRunner@29a5f4e7</td></tr>
 <tr>
-<td title='com.runners.EnableDisableTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.EnableDisableTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify enabling the field and entering text", "Automate functionality for enabling and disabling fields"</td>
-<td></td>
-<td>13</td>
-<td>com.runners.EnableDisableTestRunner@29a5f4e7</td></tr>
-<tr>
 <td title='com.runners.WebTableTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.WebTableTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the price of Python Programming Language", "Web Table Price Validation"</td>
 <td></td>
-<td>12</td>
+<td>9</td>
 <td>com.runners.WebTableTestRunner@3ddc6915</td></tr>
 <tr>
 <td title='com.runners.AutoSuggestTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.AutoSuggestTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify auto suggest feature", "Automate functionality for auto suggest feature"</td>
 <td></td>
 <td>11</td>
 <td>com.runners.AutoSuggestTestRunner@4a3631f8</td></tr>
+<tr>
+<td title='com.runners.CourseSearchTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.CourseSearchTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify course search for Python", "Course Search Functionality"</td>
+<td></td>
+<td>14</td>
+<td>com.runners.CourseSearchTestRunner@52e7a6b2</td></tr>
+<tr>
+<td title='com.runners.SelectDropdownTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.SelectDropdownTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify dropdown selection", "Automate functionality for dropdown selection"</td>
+<td></td>
+<td>9</td>
+<td>com.runners.SelectDropdownTestRunner@6f6745d6</td></tr>
+<tr>
+<td title='com.runners.RadioButtonTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.RadioButtonTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Select BMW option", "Automate functionality for radio button"</td>
+<td></td>
+<td>15</td>
+<td>com.runners.RadioButtonTestRunner@27e47833</td></tr>
+<tr>
+<td title='com.runners.SwitchTabTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.SwitchTabTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify switching to a new tab", "Automate functionality for switching tabs"</td>
+<td></td>
+<td>16</td>
+<td>com.runners.SwitchTabTestRunner@27508c5d</td></tr>
+<tr>
+<td title='com.runners.EnableDisableTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.EnableDisableTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify enabling the field and entering text", "Automate functionality for enabling and disabling fields"</td>
+<td></td>
+<td>13</td>
+<td>com.runners.EnableDisableTestRunner@29a5f4e7</td></tr>
+<tr>
+<td title='com.runners.MouseHoverTestRunner.runScenario()'><b>runScenario</b><br>Test class: com.runners.MouseHoverTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify mouse hover and options visibility", "Mouse Hover Functionality"</td>
+<td></td>
+<td>11</td>
+<td>com.runners.MouseHoverTestRunner@44a59da3</td></tr>
 </table><p>
 </body>
 </html>
